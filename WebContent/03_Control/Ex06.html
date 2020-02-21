@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+
+		for (let i = 1; i <= 10; i++) {
+			document.write(i + "번째 반복<br/>");
+		}
+
+	/* 문제1. 1~100 사이의 숫자 중에서 5의 배수일 경우에는 빨간색으로 7의 배수인 경우에는 초록색으로,
+		6의 배수인 경우에는 아쿠아색으로 화면에 출력해 보세요. */
+
+		for(let i = 1; i<=100;i++){
+			if(i%5 ==0) document.write("<font color = 'red'>" + i);
+			else if(i%7 == 0) document.write("<font color = 'green'>" + i);
+			else if(i%6 == 0) document.write("<font color = 'acua'>" + i);
+			else document.write("<font color = 'black'>" + i);
+			document.write("<font color = 'black'><br/>");
+		}
+		document.write("<hr/>");
+	// 문제2. 숫자를 입력 받아서 해당 숫자까지의 합을 구하는 프로그램을 만들어 보세요.document
+
+		let num = prompt("숫자를 입력하세요.");
+		let sum = 0;
+		for(let i = 1; i<=num; i++){
+			sum +=i;
+		}
+		document.write(sum);
+		document.write("<hr/>");
+	/* 문제3. 문제 2번의 입력받은 숫자까지 합을 구하는데 3의 배수가 아니고, 2의 배수가 아닌
+		나머지 숫자의 합을 화면에 출력해 보세요. */
+		let sum2 = 0;
+		for(let i = 1; i<=num; i++){
+			if(i%3 != 0 && i%2 !=0){
+				sum2 +=i;
+			}
+		}
+		document.write(sum2);
+
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	document.write("<h1>컴퓨터와 가위 바위 보 게임 하기</h1><br/>");
+
+	var res = prompt("가위 바위 보 !");
+
+	let random = Math.ceil(Math.random() * 3);
+
+	switch (res) {
+	case "가위":
+		if (random == 1)
+			alert("비겼습니다.");
+
+		if (random == 2)
+			alert("졌습니다.");
+
+		if (random == 3)
+			alert("이겼습니다.");
+		break;
+	case "바위":
+		if (random == 1)
+			alert("이겼습니다");
+
+		if (random == 2)
+			alert("비겼습니다.");
+
+		if (random == 3)
+			alert("졌습니다.");
+		break;
+	case "보":
+		if (random == 1)
+			alert("졌습니다.");
+
+		if (random == 2)
+			alert("이겼습니다.");
+
+		if (random == 3)
+			alert("비겼습니다.");
+		break;
+	}
+
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//문제1. 1~25까지를 5*5 테이블에
+	document.write("<table border ='1'>");
+	for (let i = 0; i < 5; i++) {
+		document.write("<tr>");
+		for (let j = 1; j <= 5; j++) {
+			document.write("<td align ='right'>" + (i * 5 + j) + "</td>");
+		}
+		document.write("</tr>");
+	}
+	document.write("</table>");
+
+	document.write("<table border = '1'>");
+	for (let i = 1; i <= 5; i++) {
+		document.write("<tr>");
+		for (let j = 0; j < 5; j++) {
+			if (j == 0)
+				document.write("<td align = 'right'>" + "&ensp;" + (j * 5 + i)
+						+ "</td>");
+			else
+				document.write("<td align = 'right'>" + (j * 5 + i) + "</td>");
+		}
+		document.write("</tr>");
+	}
+	document.write("</table>");
+
+	//문제2. 1~25까지를 5*5 테이블에 세로로
+</script>
+</head>
+<body>
+
+</body>
+</html>

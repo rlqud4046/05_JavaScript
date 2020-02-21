@@ -8,9 +8,17 @@
       "name": "Launch Chrome localhost",
       "type": "chrome",
       "request": "launch",
-      "port": 9289,
+      "port": 9246,
       "webRoot": "${workspaceFolder}",
-      "url": "http://localhost:8282/05_JavaScript/03_Control/Ex04.html"
+      "urlFilter": "http://localhost:8282/*"
+    },
+    {
+      "name": "Launch Chrome localhost (1)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9241,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://localhost:8282/05_JavaScript/03_Control/Ex09.html"
     }
   ]
 }
