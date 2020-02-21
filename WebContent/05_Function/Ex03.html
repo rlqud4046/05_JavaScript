@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+    function data() {
+        let res = frm.input.value;
+        
+        if(res ==""){ // 값이 없는 상태
+            alert("값을 입력하세요.");
+            frm.input.focus(); // 커서를 인풋으로 이동시켜라 ! 
+        }else{
+        	alert("입력하신 값은 : " + res);
+            document.write(res);
+        }
+    }
+
+
+</script>
+</head>
+<body>
+
+	<!-- form 태그에 name 속성을 설정하는 경우에는 자바스크립트를 사용할 목적으로 설정 -->
+    <form name="frm" >
+        <input type="text" name = "input">
+        <input type="button" value="확인하기" onclick="data()">
+        
+
+
+    </form>
+</body>
+</html>
