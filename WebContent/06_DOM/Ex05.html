@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+
+
+        onload = function () {
+            document.getElementById("btn").onclick = function () {
+                let t1 = document.getElementById("text1").value;
+                document.getElementById("text2").value = t1;
+             
+            };
+        };
+
+    </script>
+
+</head>
+
+<body>
+
+    <div align="center">
+        <h2>[문제] 버튼을 클릭하면 첫 번째 텍스트 창에 들어있는 내용을 두 번째 텍스트 창으로 복사하세요.</h2>
+        <input type="text" id="text1"><br />
+        <input type="text" id="text2">
+        <input type="button" value="복사" id="btn">
+    </div>
+
+</body>
+
+</html>
