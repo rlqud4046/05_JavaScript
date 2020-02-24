@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    
+    onload = function () {
+        let myDiv = document.getElementById("myDiv");
+        myDiv.style.backgroundColor = "yellow";
+
+        // id가 myDiv인 요소의 부모노드
+        let parent = myDiv.parentNode;
+        parent.style.backgroundColor  = "skyblue";
+
+        let pparent = parent.parentNode;  // myDiv의 부모의 부모노드 = body
+        pparent.style.backgroundColor = "pink";
+
+        document.getElementById("img1").onclick = function () {
+            document.getElementById("img1").src = "../images/car3.gif";
+        }
+        document.getElementById("img2").onclick = function(){
+            document.getElementById("img2").style.visibility = "hidden";
+        }
+    }
+    </script>
+</head>
+<body>
+    <div>부모노드(ParentNode)</div>
+    <div class="style1">
+        <div>테스트1</div>
+        <div>테스트2</div>
+        <div id="myDiv">테스트2-1</div>
+        <div>테스트4</div>
+        <div>테스트5</div>
+    </div>
+    <div>...........</div>
+    <img id = "img1" src ="../images/car1.gif">
+    <img id = "img2" src ="../images/car2.gif">
+
+
+</body>
+</html>
